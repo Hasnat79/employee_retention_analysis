@@ -1,5 +1,5 @@
 # Unmasking Bias: Employee Retention Analysis
-This project aims to predict employee retention and detect bias in the model using various features like 'Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', 'ExperienceInCurrentDomain'. The dataset used is 'Employee.csv' located in the [data](asg%201/data/Employee.csv) directory.
+This project aims to predict employee retention and analyze bias in the model using various features like 'Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', 'ExperienceInCurrentDomain'. The dataset used is 'Employee.csv' located in the [data](asg%201/data/Employee.csv) directory.
 
 ## Project Structure
 
