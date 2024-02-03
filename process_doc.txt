@@ -1,0 +1,23 @@
+- Total number of data : 4653
+- Original dataset:
+    - features: ['Education', 'JoiningYear', 'City', 'PaymentTier', 'Age', 'Gender', 'EverBenched', 'ExperienceInCurrentDomain'] ~ total: 8
+    - predictive feature: 'LeaveOrNot'
+    - identified categorical features: 
+        - ['Education','City','PaymentTier','EverBenched','ExperienceInCurrentDomain']
+- Protected features: ['Age', 'Gender']
+- Processing 
+    - converted the categorical features into one-hot vectors : encoded_dataset
+        - Total features: ['JoiningYear', 'Age', 'Gender', 'Education_Bachelors', 'Education_Masters', 'Education_PHD', 'City_Bangalore', 'City_New Delhi', 'City_Pune', 'PaymentTier_1', 'PaymentTier_2', 'PaymentTier_3', 'EverBenched_No', 'EverBenched_Yes', 'ExperienceInCurrentDomain_0', 'ExperienceInCurrentDomain_1', 'ExperienceInCurrentDomain_2', 'ExperienceInCurrentDomain_3', 'ExperienceInCurrentDomain_4', 'ExperienceInCurrentDomain_5', 'ExperienceInCurrentDomain_6', 'ExperienceInCurrentDomain_7'] ~ total 22
+        - predictive feature: 'LeaveOrNot'
+    - remove the protected and predictive features from the encoded_dataset
+        - Total features now: 20 
+    - Split the dataset
+        - Train: 3257 (70%) , Test 1396(30%)
+        - Distribution of Predictive feature: 'LeaveOrNot' in training data:
+            - 0 (Not Leave) : 2133 (65%)
+            - 1 (Leave): 1124 (35%)
+- Build Model
+    - Run random forest classifier 
+        - n_estimators = 50,100,200 (3 models trained)
+
+
